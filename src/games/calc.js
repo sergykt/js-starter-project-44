@@ -12,9 +12,16 @@ const brainCalc = (userName, k = 0) => {
   const operation = getRandomOperation();
   console.log(`Question: ${x} ${operation} ${y}`);
   let correctAnswer;
-  if (operation === '+') correctAnswer = x + y;
-  if (operation === '-') correctAnswer = x - y;
-  if (operation === '*') correctAnswer = x * y;
+  switch (operation) {
+    case '+':
+      correctAnswer = x + y;
+      break;
+    case '-':
+      correctAnswer = x - y;
+      break;
+    default:
+      correctAnswer = x * y;
+  }
   const answer = Number(getAnswer());
   const result = isAnswerCorrect(answer, correctAnswer, userName);
   if (result) brainCalc(userName, k + 1);
