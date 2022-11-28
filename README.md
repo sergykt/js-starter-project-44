@@ -15,6 +15,14 @@ Clone this repository and use command:
 make local-install
 ```
 
+# Uninstall
+
+Use command:
+
+```bash
+sudo npm uninstall -g @hexlet/code
+```
+
 # List of games
 
 ```bash
