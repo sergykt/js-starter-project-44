@@ -1,7 +1,7 @@
 import readlineSync from 'readline-sync';
 
 function randomInteger() {
-  const rand = -0.5 + Math.random() * (101);
+  const rand = 0.5 + Math.random() * (100);
   return Math.round(rand);
 }
 
@@ -32,6 +32,17 @@ function getRandomOperation() {
   return arr[Math.floor(Math.random() * arr.length)];
 }
 
+const getRandomProgression = () => {
+  const arr = [];
+  let rand = 0.5 + Math.random() * (10);
+  rand = Math.round(rand);
+  arr[0] = randomInteger();
+  for (let i = 1; i <= 9; i += 1) {
+    arr[i] = arr[i - 1] + rand;
+  }
+  return arr;
+};
+
 export {
-  randomInteger, askName, getRandomOperation, isAnswerCorrect, getAnswer,
+  randomInteger, askName, getRandomOperation, isAnswerCorrect, getAnswer, getRandomProgression,
 };
