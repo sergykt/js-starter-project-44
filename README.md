@@ -4,4 +4,24 @@
 
 # About
 
-Hi! I am Sergei Sivtsev. This is my first study project :)
+Hi! I am Sergei Sivtsev. This is my first study project from Hexlet :)
+
+The project is a set of five console games based on popular mobile brain training apps. Each game asks questions that need to be answered correctly. After three correct answers, the game is considered to be completed. Wrong answers end the game and offer to play it again.
+
+# Install
+
+Clone this pepository and use command:
+```bash
+npm link
+```
+
+# List of games
+
+```bash
+brain-games - just a greeting
+brain-even - even test
+brain-calc - calculator
+brain-gcd - greatest common divisor
+brain-progression - guess the number from the progression
+brain-prime - prime test
+```
