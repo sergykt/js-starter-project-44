@@ -12,7 +12,7 @@ The project is a set of five console games based on popular mobile brain trainin
 
 Clone this pepository and use command:
 ```bash
-npm link
+make local-install
 ```
 
 # List of games
