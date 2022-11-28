@@ -25,3 +25,5 @@ brain-gcd - greatest common divisor
 brain-progression - guess the number from the progression
 brain-prime - prime test
 ```
+
+<a href="https://asciinema.org/a/540926" target="_blank"><img src="https://asciinema.org/a/540926.svg" /></a>
