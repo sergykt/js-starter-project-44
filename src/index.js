@@ -42,6 +42,15 @@ const getRandomProgression = () => {
   return arr;
 };
 
+const isNumberPrime = (number) => {
+  const limit = Math.trunc(number ** 0.5);
+  for (let i = 3; i <= limit; i += 2) {
+    if (number % i === 0) return false;
+  }
+  return true;
+};
+
 export {
   randomInteger, askName, getRandomOperation, isAnswerCorrect, getAnswer, getRandomProgression,
+  isNumberPrime,
 };
