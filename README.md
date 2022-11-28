@@ -10,7 +10,7 @@ The project is a set of five console games based on popular mobile brain trainin
 
 # Install
 
-Clone this pepository and use command:
+Clone this repository and use command:
 ```bash
 make local-install
 ```
