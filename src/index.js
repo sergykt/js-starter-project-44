@@ -44,6 +44,7 @@ const getRandomProgression = () => {
 
 const isNumberPrime = (number) => {
   const limit = Math.trunc(number ** 0.5);
+  if (number % 2 === 0 && number !== 2) return false;
   for (let i = 3; i <= limit; i += 2) {
     if (number % i === 0) return false;
   }
