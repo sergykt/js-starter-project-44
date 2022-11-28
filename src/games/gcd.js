@@ -7,8 +7,8 @@ const gcd = (userName, k = 0) => {
     console.log(`Congratulations, ${userName}!`);
     return;
   }
-  let x = randomInteger();
-  let y = randomInteger();
+  let x = randomInteger(1, 100);
+  let y = randomInteger(1, 100);
   let z;
   console.log(`Question: ${x} ${y}`);
   if (x < y) {

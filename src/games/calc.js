@@ -7,8 +7,8 @@ const brainCalc = (userName, k = 0) => {
     console.log(`Congratulations, ${userName}!`);
     return;
   }
-  const x = randomInteger();
-  const y = randomInteger();
+  const x = randomInteger(1, 100);
+  const y = randomInteger(1, 100);
   const operation = getRandomOperation();
   console.log(`Question: ${x} ${operation} ${y}`);
   let correctAnswer;

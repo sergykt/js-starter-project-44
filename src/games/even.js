@@ -7,7 +7,7 @@ const evenNumber = (userName, k = 0) => {
     console.log(`Congratulations, ${userName}!`);
     return;
   }
-  const number = randomInteger();
+  const number = randomInteger(1, 100);
   console.log(`Question: ${number}`);
   const answer = getAnswer();
   const correctAnswer = number % 2 === 0 ? 'yes' : 'no';

@@ -1,5 +1,5 @@
 import {
-  askName, isAnswerCorrect, getAnswer, getRandomProgression,
+  askName, isAnswerCorrect, getAnswer, getRandomProgression, randomInteger,
 } from '../index.js';
 
 const progression = (userName, k = 0) => {
@@ -8,8 +8,7 @@ const progression = (userName, k = 0) => {
     return;
   }
   const arr = getRandomProgression();
-  let index = -0.5 + Math.random() * (10);
-  index = Math.round(index);
+  const index = randomInteger(0, 9);
   const correctAnswer = arr[index];
   arr[index] = '..';
   const str = arr.join(' ');
